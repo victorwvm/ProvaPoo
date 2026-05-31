@@ -6,7 +6,7 @@ public class Turma {
     private int codigoTurma, anoLetivo;
     private Disciplina disciplina;
     private Professor professor;
-    private ArrayList<Aluno> alunos = new ArrayList<>();
+    private ArrayList<Aluno> listaDeAlunos = new ArrayList<>();
 
     public Turma(int codigoTurma, int anoLetivo, Disciplina disciplina, Professor professor) {
         this.codigoTurma = codigoTurma;
@@ -16,7 +16,7 @@ public class Turma {
     }
 
     public void adicionarAluno(Aluno aluno) {
-        this.alunos.add(aluno);
+        this.listaDeAlunos.add(aluno);
     }
 
     public int getCodigoTurma() {
@@ -27,8 +27,8 @@ public class Turma {
         this.codigoTurma = codigoTurma;
     }
 
-    public ArrayList<Aluno> getAlunos() {
-        return alunos;
+    public ArrayList<Aluno> getListaDeAlunos() {
+        return listaDeAlunos;
     }
 
 

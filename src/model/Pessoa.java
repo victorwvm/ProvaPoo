@@ -1,9 +1,9 @@
 package model;
 
-public class Pessoa {
-    private String nome, telefone;
-    private Endereco endereco;
-    private String dataDeNascimento;
+public abstract class Pessoa {
+    protected String nome, telefone;
+    protected Endereco endereco;
+    protected String dataDeNascimento;
 
     public Pessoa(String nome, String telefone, Endereco endereco, String dataDeNascimento) {
         this.nome = nome;

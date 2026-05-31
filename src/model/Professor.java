@@ -4,16 +4,26 @@ import java.util.ArrayList;
 public class Professor extends Pessoa
 {
     private String anoDeFormacao;
+    private String especialidade;
     private int anoDeAdmissao;
     private String email;
     private ArrayList<Disciplina> listaDisciplinas = new ArrayList<Disciplina>();
 
 
-    public Professor(String nome, String telefone, Endereco endereco, String dataDeNascimento, String anoDeFormacao, int anoDeAdmissao, String email) {
+    public Professor(String nome, String telefone, Endereco endereco, String dataDeNascimento, String anoDeFormacao, String especialidade, int anoDeAdmissao, String email) {
         super(nome, telefone, endereco, dataDeNascimento);
         this.anoDeFormacao = anoDeFormacao;
+        this.especialidade = especialidade;
         this.anoDeAdmissao = anoDeAdmissao;
         this.email = email;
+    }
+
+    public String getEspecialidade() {
+        return especialidade;
+    }
+
+    public void setEspecialidade(String especialidade) {
+        this.especialidade = especialidade;
     }
 
     public String getAnoDeFormacao()
