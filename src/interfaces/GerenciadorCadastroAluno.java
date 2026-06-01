@@ -8,5 +8,5 @@ public interface GerenciadorCadastroAluno {
     ArrayList<Aluno> listarAluno();
     Aluno buscarAlunoPorMatricula(int matricula);
 
-    void cadastrarAluno(Aluno aluno);
+
 }

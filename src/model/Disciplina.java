@@ -8,7 +8,7 @@ public class Disciplina {
 
     private ArrayList<Professor> professores = new ArrayList<Professor>();
 
-    public Disciplina(String nomeDisciplina, int codigo, int cargaHoraria) {
+    public Disciplina() {
         this.nomeDisciplina = nomeDisciplina;
         this.codigo = codigo;
         this.cargaHoraria = cargaHoraria;

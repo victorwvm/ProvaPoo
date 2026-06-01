@@ -6,7 +6,7 @@ public class Nota {
     private double valor;
     private String data;
 
-    public Nota(Aluno aluno, Disciplina disciplina, double valor, String data){
+    public Nota(){
         this.aluno = aluno;
         this.disciplina = disciplina;
         this.valor = valor;
@@ -19,6 +19,9 @@ public class Nota {
 
     public Disciplina getDisciplina() {
         return disciplina;
+    }
+    public void setDisciplina(Disciplina disciplina) {
+        this.disciplina = disciplina;
     }
 
     public double getValor() {
@@ -36,4 +39,5 @@ public class Nota {
     public void setData(String data) {
         this.data = data;
     }
+
 }
